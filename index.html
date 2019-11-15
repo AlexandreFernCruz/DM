@@ -1,62 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-PT">
 <head>
 	<title>Bootstrap</title>
+	<!-- codificação da página-->
 	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css"> 
-	<script src="Bootstrap/js/boostrap.min.js" type="text/javascript" charset="utf-8" ></script>
+	
 </head>
 <body>
-<!-- MENU -->
-<nav class="nav">
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Pictures</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Videos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link " href="#">Help</a>
-  </li>
-</ul>
-</nav>
-<!-- slide de fotos -->
-
-<div class="alert alert-info text-center" role="alert">
-	A minha primeira página em Bootstrap
-</div> 
-
-<!-- divisão da página -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      
-      <img src="img/a.jpg" alt="Ria de Aveiro" title="Imagem da Ria da minha cidade" class="img-fluid rounded">
-      <p> TEXTO</p>
-
-    </div>
-
-    <div class="col-sm">
-      <img src="img/i.jpg" alt="Ria de Aveiro" title="Imagem da Ria da minha cidade" class="img-fluid rounded-circle">
-      <p> TEXTO</p>
-    </div>
-    <div class="col-sm">
-      <img src="img/r.jpg" alt="Ria de Aveiro" title="Imagem da Ria da minha cidade" class="img-fluid rounded-pill">
-      <p> TEXTO</p>
+	<!-- navegation bar -->
+<div class="pos-f-t">
+  <div class="collapse" id="batatas">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Desing Multimédia</h5>
+      <!--<span class="text-muted">Menu dinâmico</span>-->
+      <a href="#" title="" class="btn btn-info"> Inicio </a>   
+      <a href="pg/preço.html" title="Preço das Férias" class="btn btn-info"> Preços </a>
     </div>
   </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#batatas" aria-controls="batatas" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
 </div>
 
-<!-- footer -->
-<footer>
-	
+<!-- Carrousel de fotos-->
+<div align="center">
+	<div class="w-55 p-3"> <!-- w -25% 50% 75% 100% -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/a.jpg" width="1200" height="626" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<!-- caption da foto-->
+		          <h5>Ria de Aveiro</h5>
+		          <p> &#169; Taken by some random photographer. &#169; </p>
+		        </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/i.jpg" width="1200" height="626" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		      		<!-- caption da foto-->
+		          <h5> Ria de Aveiro</h5>
+		          <p> &#169; Taken by some random photographer. &#169;</p>
+		      </div> 
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/r.jpg" width="1200" height="626" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		      		<!-- caption da foto-->
+		          <h5> Ria de Aveiro</h5>
+		          <p> &#169; Taken by some random photographer. &#169;</p>
+		        </div>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div>
+</div>
+<!-- footer-->
+<footer class="card-footer text-muted" style="background-color: #343a40 ; text-align: center;">
+				
+	<h5> &#169; Copy - Nº 21561 - Alexandre Cruz &#169; </h5>
+
 </footer>
 
-
+<script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="Bootstrap/js/popper.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
