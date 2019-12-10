@@ -37,6 +37,7 @@ document.getElementById("IA").innerHTML= somaIA.valor;
 document.getElementById("IC").innerHTML= somaIC.valor;
 document.getElementById("IV").innerHTML= somaIV.valor;
 
+
 /*
 console.log('PRAIA');    
 console.log(somaPC.valor);
@@ -56,6 +57,7 @@ console.log(somaCV.valor);
 
 
 
+/*test*/ 
 
 
 
